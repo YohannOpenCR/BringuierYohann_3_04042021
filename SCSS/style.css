@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+/******************MIXIN*****************/
+/*Aide par un générateur de Gradient : https://cssgradient.io/*/
+/*mes polices d'écriture*/
+/*mes couleurs*/
+/*magin + padding*/
+.body {
+  margin: 0px;
+  font-family: 'roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 36px;
+  background-color: #eaeaea;
+  font-size: 20px;
+  position: relative;
+}
+
+.localisation__icon {
+  margin-right: 16px;
+}
+
+.localisation__text {
+  font-weight: 700px;
+}
+
+.choice {
+  padding: 32px;
+  text-align: center;
+  background-color: #f6f6f6;
+  font-size: 19px;
+  position: relative;
+}
+
+.choice__title {
+  margin: 0;
+}
+
+.choice__subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+.choice__btn {
+  border: 0px;
+  padding: 12px 12px;
+  font-weight: 500px;
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  background: #FF79DA;
+  background: linear-gradient(170deg, #FF79DA 19%, #9256DC 100%);
+  cursor: pointer;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-box-shadow: 19x 19px 10px #363636;
+          box-shadow: 19x 19px 10px #363636;
+}
+
+.choice__btn:hover {
+  background-color: white;
+  -webkit-box-shadow: 6px 6px 10px #363636;
+          box-shadow: 6px 6px 10px #363636;
+}
+
+.choice__btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  padding: 16px 16px;
+  -webkit-box-shadow: 0px 0px 8px #363636;
+          box-shadow: 0px 0px 8px #363636;
+  position: relative;
+  z-index: 1000;
+}
+
+.header__logo {
+  font-family: "Shrikhand", "cursive";
+  margin: 0px;
+  text-align: center;
+}
+
+.blocs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .blocs {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.bloc {
+  background-color: #F6F6F6;
+  border-radius: 16px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.bloc__img {
+  height: 192px;
+  width: 100%;
+  border: transparent solid 0px;
+  border-radius: 16px 16px 0px 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bloc__pins {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+}
+
+.bloc__footer {
+  padding: 16px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bloc__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.bloc__title {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.bloc__subtitle {
+  margin: 0px;
+}
+
+.bloc__btn {
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bloc__like {
+  background-color: #F6F6F6 !important;
+}
+
+.footer {
+  background-color: #353535;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  padding: 16px;
+}
+
+.footer__logo {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+  margin: 0px;
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer__listElt {
+  margin: 8px 0px;
+}
+
+.footer__listElt:first-child {
+  margin-top: 0px;
+}
+
+.footer__listElt:last-child {
+  margin-bottom: 0px;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__icon {
+  width: 19px;
+  margin-right: 8px;
+}
+
+/*Document*/
+html {
+  line-height: 1.20;
+}
+
+/*Section*/
+body {
+  margin: 0px;
+}
+
+main {
+  display: block;
+  /*Notion prise sur https://developer.mozilla.org/fr/docs/Learn/Tools_and_testing/Cross_browser_testing/HTML_and_CSS#ie_conditional_comments*/
+}
+
+h1 {
+  font-size: 32px;
+  margin: 10px 0px;
+}
+
+/****A FAIRE ****/
+/*# sourceMappingURL=style.css.map */

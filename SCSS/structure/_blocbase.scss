@@ -1,0 +1,187 @@
+
+.body{
+  margin: 0px;
+  font-family: 'roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.localisation{
+  display: flex;
+  justify-content: center;
+  padding: 20px + $appPadding;
+  background-color: $Pale;
+  font-size: 20px;
+  position: relative;
+  
+  &__icon{
+    margin-right: 16px;
+  }
+
+  &__text{
+    font-weight: 700px;
+  }
+}
+
+.choice{
+  padding: 32px;
+  text-align: center;
+  background-color: $Pale2;
+  font-size: 19px;
+  position: relative;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    margin: 1.5rem 0;
+  }
+
+  &__btn {
+    @include button(primary);
+  }
+}
+
+.header {
+  padding: 16px $appPadding;
+  box-shadow: 0px 0px 8px $Black;
+  position: relative;
+  z-index: 1000;
+
+  &__logo {
+    font-family: "Shrikhand", "cursive";
+    margin: 0px;
+    text-align: center;
+  }
+} 
+
+.blocs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+  
+    @media (min-width:1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.bloc{   
+  background-color: $White;
+  border-radius: 16px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+
+  &__img {
+    height: 192px;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: none;
+    object-fit: cover;
+  }
+
+  &__pins {
+    background-color: $Tertiary;
+    color: darken($Tertiary, 50%);
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    top: 16px;
+    right: 12px;
+  }
+
+  &__footer {
+    padding: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    margin: 0px;
+  }
+
+  &__btn {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  &__like {
+    background-color: $White !important;
+  }
+
+}
+
+
+.footer {
+  background-color: #353535;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: $appPadding;
+  }
+  
+  &__logo {
+    color: white;
+    font-family: "Shrikhand", "cursive";
+    margin: 0px;
+    font-size: 19px;
+    margin-bottom: $appPadding;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &__listElt {
+    margin: 8px 0px;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    width: 19px;
+    margin-right: 8px;
+  }
+}
+
+
+

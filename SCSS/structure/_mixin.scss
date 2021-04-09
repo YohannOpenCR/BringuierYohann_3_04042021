@@ -1,0 +1,29 @@
+/******************MIXIN*****************/
+
+@mixin button ($type)
+
+  {
+  border: 0px;
+  padding: 12px 12px;
+  font-weight: 500px;
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  background: $Secondary;
+  background: linear-gradient(170deg, $Secondary 19%, $Primary 100%);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 19x 19px 10px $Black;
+
+  &:hover {
+    background-color: white;
+    box-shadow: 6px 6px 10px $Black;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/*Aide par un générateur de Gradient : https://cssgradient.io/*/

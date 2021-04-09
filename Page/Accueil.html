@@ -3,26 +3,31 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/SCSS/styles.css">
+    <link rel="stylesheet" href="/SCSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e85fafa45.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Accueil - OhMyFood</title>
 </head>
 
 <body>
+
   <header class="header">
       <h1 class="header__logo">Ohmyfood</h1>
   </header>
   
   <main>
-      <section class="localisation">
-        <i class="fas fa-map-marker-alt localisation_icon"></i>
-        <span class="localisation__text">Paris, Belleville</span>
-      </section>
+      <div class="localisation">
+        <i class="fas fa-map-marker-alt localisation_icon">
+        <span class="localisation__text">Paris, Belleville</span></i>
+        </div>
 
       <section class="choice">
-        <h2 class="choice__title">Réservez le menu qui</br>vous convient</h2>
+        <h2 class="choice__title">Réservez le menu qui<br>vous convient</h2>
         <p class="choice__subtitle">Découvrez des restaurants d'exeption, sélectionnés par nos soins</p>
-        <button class="choice__btn">Explorer nos restaurants</button>
+        <a class="choice__btn">Explorer nos restaurants</a>
       </section>
 
       <section class="scrolling">
@@ -54,21 +59,22 @@
           <div class="blocs">
 
             <a class="bloc" href="/Page/La-palette-du-goût.html">        
-              <img  src="/img/restaurants/la-palette-du-gout.jpg" alt="image d'un plat du restaurant la palette du gout" class="bloc__img">
+              <img class="bloc__img" src="/img/restaurants/la-palette-du-gout.jpg" alt="image d'un plat du restaurant la palette du gout" >
               <span class="bloc__pins">Nouveau</span>
               <footer class="bloc__footer">
                 <div class="bloc__content">
                   <h3 class="bloc__title">La palette du goût</h3>
                   <span class="bloc__subtitle">Ménilmontant</span>
                 </div>
-                <div class="menu__btn bloc__btn">
-                  <i class="bloc__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                <div class="menu__btn">
+                  <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                  <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x"></i>
                 </div>
               </footer>
             </a> 
 
             <a class="bloc" href="/Page/la-note-enchantee.html">          <!--Mettre la future page en lien--> 
-              <img  src="/img/restaurants/la-note-enchantee.jpg" alt="image d'un plat du restaurant La note enchantée" class="bloc__img">
+              <img class="bloc__img" src="/img/restaurants/la-note-enchantee.jpg" alt="image d'un plat du restaurant La note enchantée" >
               <span class="bloc__pins">Nouveau</span>
               <footer class="bloc__footer">
                 <div class="bloc__content">
@@ -76,34 +82,37 @@
                   <span class="bloc__subtitle">Charonne</span>
                 </div>
                 <div class="menu__btn bloc__btn">
-                  <i class="bloc__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                  <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                  <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x"></i>
                 </div>
               </footer>
             </a> 
 
             <a class="bloc" href="/Page/A-la-française.html">          <!--Mettre la future page en lien--> 
-              <img  src="/img/restaurants/a-la-francaise.jpg" alt="image d'un plat du restaurant à la française" class="bloc__img">
+              <img class="bloc__img" src="/img/restaurants/a-la-francaise.jpg" alt="image d'un plat du restaurant à la française" >
               <footer class="bloc__footer">
                 <div class="bloc__content">
                   <h3 class="bloc__title">À la française</h3>
                   <span class="bloc__subtitle">Cité Rouge</span>
                 </div>
                 <div class="menu__btn bloc__btn">
-                  <i class="bloc__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                  <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                  <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x"></i>
                 </div>
               </footer>
             </a> 
 
             <a class="bloc" href="/Page/le-delice-des-sens.html">          <!--Mettre la future page en lien--> 
-              <img  src="/img/restaurants/le-delice-des-sens.jpg" alt="image d'un plat du restaurant le délice des sens" class="bloc__img">
-              <span class="bloc__pins">Nouveau</span>
+              <img class="bloc__img" src="/img/restaurants/la-palette-du-gout.jpg" alt="image d'un plat du restaurant le délice des sens">
               <footer class="bloc__footer">
                 <div class="bloc__content">
                   <h3 class="bloc__title">Le délice des sens</h3>
                   <span class="bloc__subtitle">Folie-Méricourt</span>
                 </div>
                 <div class="menu__btn bloc__btn">
-                  <i class="bloc__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                  <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                  <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x"></i>
+              </div>
                 </div>
               </footer>
             </a> 
