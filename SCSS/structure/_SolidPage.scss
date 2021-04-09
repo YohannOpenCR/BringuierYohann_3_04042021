@@ -1,0 +1,76 @@
+.body, html{
+    margin: 0px;
+    font-family: 'roboto', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .container{
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .header {
+    padding: 16px $appPadding;
+    box-shadow: 0px 0px 8px 0px $blackeraser;
+    position: relative;
+    z-index: 1000;
+  
+    &__logo {
+      font-family: "Shrikhand", "cursive";
+      margin: 0px;
+      text-align: center;
+    }
+  } 
+
+  
+
+.footer {
+    background-color: $Black;
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: $appPadding;
+    }
+    
+    &__logo {
+      color: $White;
+      font-family: "Shrikhand", "cursive";
+      margin: 0px;
+      font-size: 19px;
+      margin-bottom: $appPadding;
+    }
+  
+    &__list {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    &__listElt {
+      margin: 8px 0px;
+  
+      &:first-child {
+        margin-top: 0px;
+      }
+  
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  
+    &__link {
+      color: $White;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    &__icon {
+      width: 19px;
+      margin-right: 8px;
+    }
+  }
