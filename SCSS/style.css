@@ -5,7 +5,7 @@
 /*mes polices d'écriture*/
 /*mes couleurs*/
 /*magin + padding*/
-.body, html {
+body, html {
   margin: 0px;
   font-family: 'roboto', sans-serif;
   scroll-behavior: smooth;
@@ -14,6 +14,8 @@
 .container {
   max-width: 1280px;
   margin: auto;
+  height: auto;
+  width: auto;
   position: relative;
 }
 
@@ -242,9 +244,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  -webkit-column-gap: 32px;
-          column-gap: 32px;
-  row-gap: 32px;
+  background: #f6f6f6;
 }
 
 @media (min-width: 1024px) {
@@ -255,12 +255,13 @@
 }
 
 .bloc {
-  background-color: #F6F6F6;
+  display: block;
+  background-color: #FFF;
   border-radius: 16px;
   position: relative;
   text-decoration: none;
   color: inherit;
-  display: block;
+  margin: 20px;
 }
 
 .bloc__img {
@@ -327,8 +328,129 @@
           justify-content: center;
 }
 
-.step__like {
-  background-color: #F6F6F6 !important;
+.bloc__like {
+  background-color: #FFF !important;
+}
+
+.menu {
+  margin-top: -64px;
+  border-radius: 32px 32px 0px 0px;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+
+.menu__header {
+  padding: 16px 32px 0px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__title {
+  font-family: "Shrikhand", "cursive";
+}
+
+.menu__btn {
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+
+.menu__btn:hover::before {
+  opacity: 1;
+}
+
+.menu__btn::before {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9256DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9256DC 0%, #FF79DA 100%);
+}
+
+.menu__like {
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  mix-blend-mode: lighten;
+}
+
+.menu__btn:hover .menu__like--noBg {
+  opacity: 0;
+}
+
+.choiceImg {
+  max-width: 100%;
+  max-height: 512px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header--withBackArrow {
+  position: relative;
+}
+
+.header__arrow {
+  position: absolute;
+  left: 32px;
+  height: 32px;
+  width: 32px;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 19px;
+  color: black;
 }
 
 /****A FAIRE ****/

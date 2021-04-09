@@ -108,73 +108,74 @@
 .blocs {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    column-gap: 32px;
-    row-gap: 32px;
-  
+    background: $Pale2;
     @media (min-width:1024px) {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
 
-.bloc{   
-  background-color: $White;
-  border-radius: 16px;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-
-  &__img {
-    height: 192px;
-    width: 100%;
-    border: transparent solid 0px;
-    border-radius: 16px 16px 0px 0px;
-    box-shadow: none;
-    object-fit: cover;
-  }
-
-  &__pins {
-    background-color: $Tertiary;
-    color: darken($Tertiary, 50%);
-    padding: 8px;
-    border-radius: 2px;
-    position: absolute;
-    top: 16px;
-    right: 12px;
-  }
-
-  &__footer {
-    padding: 16px;
+  .bloc{   
+    display: block;
+    background-color: #FFF;
+    border-radius: 16px;
     position: relative;
-    display: flex;
-    align-items: center;
-  }
+    text-decoration: none;
+    color: inherit;
+    margin: 20px;
+    
 
-  &__content {
-    flex: 1;
-  }
+    &__img {
+      height: 192px;
+      width: 100%;
+      border: transparent solid 0px;
+      border-radius: 16px 16px 0px 0px;
+      box-shadow: none;
+      object-fit: cover;
+   }
 
-  &__title {
-    margin: 0;
-    margin-bottom: 4px;
-  }
+    &__pins {
+      background-color: $Tertiary;
+      color: darken($Tertiary, 50%);
+      padding: 8px;
+      border-radius: 2px;
+      position: absolute;
+      top: 16px;
+      right: 12px;
+    }
 
-  &__subtitle {
-    margin: 0px;
-  }
+    &__footer {
+      padding: 16px;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
 
-  &__btn {
-    height: 32px;
-    width: 32px;
-    background-color: transparent;
-    border: transparent 0px solid;
-    padding: 0px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
+    &__content {
+      flex: 1;
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 4px;
+    }
+
+    &__subtitle {
+      margin: 0px;
+    }
+
+    &__btn {
+      height: 32px;
+      width: 32px;
+      background-color: transparent;
+      border: transparent 0px solid;
+      padding: 0px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    &__like{
+      background-color: #FFF!important;
+    }
 }
 
-.step__like{
-  background-color: $White !important;
-}
