@@ -95,11 +95,24 @@ ANIMATION LOADING
           animation-delay: 10s;
 }
 
-/*mes polices d'écriture*/
-/*mes couleurs*/
-/*magin + padding*/
-/******************MIXIN*****************/
-/*Aide par un générateur de Gradient : https://cssgradient.io/*/
+/****************************************
+  FONT-FAMILLY 
+****************************************/
+/****************************************
+  COLORS
+****************************************/
+/****************************************
+   PADDING + ATTRIBUT
+****************************************/
+/****************************************
+  MIXIN GENERAL DE BUTTON
+****************************************/
+/*********************************************************************
+      Aide par un générateur de Gradient : https://cssgradient.io/
+**********************************************************************/
+/****************************************
+  GENERAL BODY + HTML
+****************************************/
 body, html {
   margin: 0px;
   font-family: 'roboto', sans-serif;
@@ -112,6 +125,9 @@ body, html {
   position: relative;
 }
 
+/****************************************
+  GENERAL HEADER
+****************************************/
 .header {
   padding: 16px 16px;
   -webkit-box-shadow: 0px 0px 8px 0px #3636363a;
@@ -126,6 +142,9 @@ body, html {
   text-align: center;
 }
 
+/****************************************
+  GENERAL FOOTER
+****************************************/
 .footer {
   background-color: #363636;
 }

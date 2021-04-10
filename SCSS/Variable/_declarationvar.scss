@@ -1,9 +1,14 @@
-/*mes polices d'écriture*/
+/****************************************
+  FONT-FAMILLY 
+****************************************/
 $font-general: 'Roboto', sans-serif;
 $font-thingeneral: 'Roboto Thin', sans-serif;
 $font-title: 'Shrikhand'; 
 
-/*mes couleurs*/
+
+/****************************************
+  COLORS
+****************************************/
 $Primary: #9256DC;
 $Secondary: #FF79DA;
 $Tertiary: #99E2D0;
@@ -18,5 +23,8 @@ $blackeraser: #3636363a;
 $White: #F6F6F6;
 $WhiteMenu: #FFF;
 
-/*magin + padding*/
+
+/****************************************
+   PADDING + ATTRIBUT
+****************************************/
 $appPadding: 16px;

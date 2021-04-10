@@ -1,3 +1,7 @@
+/****************************************
+  GENERAL BODY + HTML
+****************************************/
+
 body, html{
     margin: 0px;
     font-family: 'roboto', sans-serif;
@@ -9,7 +13,10 @@ body, html{
     margin: auto;
     position: relative;
   }
-  
+
+/****************************************
+  GENERAL HEADER
+****************************************/  
   .header {
     padding: 16px $appPadding;
     box-shadow: 0px 0px 8px 0px $blackeraser;
@@ -24,7 +31,9 @@ body, html{
   } 
 
   
-
+/****************************************
+  GENERAL FOOTER
+****************************************/
 .footer {
     background-color: $Black;
     
