@@ -1,3 +1,7 @@
+/****************************************
+  LOCALISATION RESTOS
+****************************************/
+
 .localisation{
   display: flex;
   justify-content: center;
@@ -15,6 +19,9 @@
   }
 }
 
+/****************************************
+  TEXTE DE PRESENTATION + BUTTON
+****************************************/
 .choice{
   padding: 32px;
   text-align: center;
@@ -34,6 +41,9 @@
   }
 }
 
+/****************************************
+  SECTION FONCTIONNEMENT "SCROLLING"
+****************************************/
 .scrolling{
   padding: ($appPadding + 16px) $appPadding;
 
@@ -100,6 +110,10 @@
     color: $Grey;
   }
 }
+
+/****************************************
+  MISE-EN-PAGE RESTOS   "BLOC COMPLET"
+****************************************/
 .restaurants{
   background-color: $Pale;
   padding: ($appPadding + 16px) $appPadding;
@@ -175,7 +189,7 @@
     }
 
     &__like{
-      background-color: #FFF!important;
+      background-color: $WhiteMenu !important;
     }
 }
 

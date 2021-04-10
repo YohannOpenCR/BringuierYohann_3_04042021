@@ -1,0 +1,276 @@
+/****************************************
+HEADER PAGE-MENU
+****************************************/
+.header {
+  padding: 1rem $appPadding;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1000;
+
+  &__logo {
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.menu-header{
+  align-items: center;
+  display: flex;
+  font-weight: normal;
+  justify-content: space-between;
+  padding: 0px 20px;
+
+  h2{
+    font-family: $font-title;
+  }
+}
+
+/****************************************
+IMAGE PLAT-RESTAURANT PAGE-MENU
+****************************************/
+
+.myImg{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 300px;
+  width: 100%;
+}
+
+
+/****************************************
+MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
+****************************************/
+.restos-menus {
+  display: grid;
+
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 60px;
+    margin: 0px 50px;
+  }
+}
+  
+.section-restos-menus{
+  background-color: $Pale2;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  margin-top: -50px;
+
+  @media (min-widht:700px){
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 60px;
+    margin: 0px 70px;
+    padding: 50px;
+    margin-top: -50px;
+  }
+
+  @media (min-width:1024px){
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 60px;
+    margin: 0px 70px;
+    margin-top: -50px;
+  }
+}
+
+.menus {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0px 10px;
+
+  &__title {
+    font-family: $font-general;
+    font-weight: normal;
+    padding-bottom: 6px;
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      background-color: $Tertiary;
+      bottom: 0;
+      content: "";
+      height: 4px;
+      left: 0;
+      position: absolute;
+      width: 30px;
+    }
+  }
+}
+/****************************************
+MISE-EN-PAGE CARTE PAGE-MENU + ROTATE ICON  "MENU"
+****************************************/
+.menu-content {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px $blackeraser;
+  display: flex;
+  margin: 30px 0px;
+  overflow: hidden;
+  padding: 10px;
+  cursor: pointer;
+  animation: apparition 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+
+  &__header {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+
+  &__title {
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+
+  &__para {
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+
+  &__price {
+      align-items: flex-end;
+      display: flex;
+      font-family: $font-general;
+      font-weight: 700;
+      justify-content: flex-end;
+      padding-left: 20px;
+  }
+
+  &__confirm {
+      align-items: center;
+      background-color: $Tertiary;
+      display: flex;
+      justify-content: center;
+      margin: -16px -120px -16px 16px;
+      transition-duration: .5s;
+      width: 104px;
+  }
+
+  &:hover &__confirm {
+      margin-right: -10px;
+  }
+
+  &__check-icon {
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  color: $Tertiary;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  transform: rotate(180deg);
+  transition-duration: .8s;
+  width: 25px;
+  }
+
+  &:hover &__check-icon {
+      transform: rotate(0);
+  }
+
+  &__icon {
+      color: $Tertiary;
+  }
+}  
+
+@for $i from 0 to 9 {
+  .delay-#{$i} {
+    animation-delay:  #{$i/10}s;
+  }
+}
+
+
+
+/****************************************
+ANIMATION BTN-COMMANDER   PAGE-MENU
+****************************************/
+  
+.commandBtn {
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  text-decoration: none;
+
+    p {
+      background: linear-gradient(0deg,$Secondary 30%, $Primary 80%);
+      border-radius: 30px;
+      box-shadow: -1px 3px 25px -10px rgba(0,0,0,0.65);
+      color: $WhiteMenu;
+      padding: 15px 40px;
+
+      @include button(Primary);
+      cursor: pointer;    
+    }
+  }
+
+/****************************************
+HEART ANIMATION   
+****************************************/
+
+  .menu {
+    &__btn {
+      height: 32px;
+      width: 32px;
+      background-color: transparent;
+      border: transparent 0px solid;
+      padding: 0px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor: pointer;
+      position: relative;
+      background-color: $Black;
+        
+      &:hover::before {
+        opacity: 1;
+      }
+        
+      &::before {
+        opacity: 0;
+        transition: 0.5s;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(0deg, $Primary 0%,$Secondary 100%);
+      }
+    }
+    
+    &__like {
+      transition-duration: 0.25s;
+      background-color: $Pale2;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      mix-blend-mode: lighten;
+    }
+    
+    &__btn:hover {
+      .menu__like {
+  
+        &--noBg {
+           opacity: 0;
+        }
+      }
+    }
+  }
+
+
+  
