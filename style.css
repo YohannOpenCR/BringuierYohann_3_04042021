@@ -512,7 +512,7 @@ body, html {
 .choice__btn {
   border: 0px;
   padding: 12px 12px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 100px;
   color: white;
@@ -1030,7 +1030,7 @@ ANIMATION BTN-COMMANDER   PAGE-MENU
   padding: 15px 40px;
   border: 0px;
   padding: 12px 12px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 100px;
   color: white;
