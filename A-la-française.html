@@ -3,9 +3,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="stylesheet" href="/styles.scss">
-        <link rel="stylesheet" href="/styles.css.map">
+        <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script crossorigin="anonymous" src="https://kit.fontawesome.com/5e85fafa45.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,7 +11,6 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Accueil - OhMyFood</title>
     </head>
-
 
 <!-------------------------------------------
     ANIMATION
@@ -36,7 +33,7 @@
     <body>
         <header class="header header--return">
             <div class="restaurant-container">
-                <a href="../index.html"><i class="fas fa-arrow-left header__return"></i></a>
+                <a href="index.html"><i class="fas fa-arrow-left header__return"></i></a>
                 <h1 class="header__logo">Ohmyfood</h1>
             </div>
         </header>
@@ -45,11 +42,11 @@
     IMAGE RESTO
 --------------------------------------------->
 
-        <img src="/img/restaurants/la-note-enchantee.jpg" alt="image d'un plat du restaurant la note enchantée" class="myImg">
+        <img src="img/restaurants/a-la-francaise.jpg" alt="image d'un plat du restaurant À la française" class="myImg">
 
         <main class="section-restos-menus">
             <header class="menu-header">
-                <h2>La note enchantée</h2>
+                <h2>À la française</h2>
                 <button class="menu__btn">
                     <i class="menu__like menu__like--noBg far fa-heart fa-2x"></i>
                     <i class="menu__like menu__like--bg fas fa-heart fa-2x"></i>
@@ -59,28 +56,28 @@
 <!-------------------------------------------
     ENTREE - MENU
 --------------------------------------------->
-            <div class="restos-menus ">
+            <div class="restos-menus">
                 <div class="menus">
-                        <h4 class="menus__title">Entrée</h4>
+                    <h4 class="menus__title">Entrée</h4>
 
-                            <section class="menu-content delay-0">
-                                <header class="menu-content__header">
-                                    <h5 class="menu-content__title">Raviole de foie gras</h5>
-                                        <p class="menu-content__para">Accompagnés de leur crème à la truffe</p>
-                                </header>
+                        <section class="menu-content delay-0">
+                            <header class="menu-content__header">
+                                <h5 class="menu-content__title">Tartare de poulpe acidulé</h5>
+                                    <p class="menu-content__para">Aux zestes d'orange</p>
+                            </header>
 
-                                <div class="menu-content__price">25€</div>
-                                <div class="menu-content__confirm">
-                                    <div class="menu-content__check-icon">
-                                        <i class="menu-content__icon fas fa-check"></i>
-                                    </div>
+                            <div class="menu-content__price">25€</div>
+                            <div class="menu-content__confirm">
+                                <div class="menu-content__check-icon">
+                                    <i class="menu-content__icon fas fa-check"></i>
                                 </div>
-                            </section>  
-
+                            </div>
+                        </section>  
+                    
                     <section class="menu-content delay-1">
                         <header class="menu-content__header">
-                            <h4 class="menu-content__title">Caviar osciètre</h4>
-                                <p class="menu-content__para">Sur blini à la farine de blé noir</p>
+                            <h4 class="menu-content__title">Velouté de légumes d'antan</h4>
+                                <p class="menu-content__para">Carotte, panais, topinambour</p>
                         </header>
 
                         <div class="menu-content__price">35€</div>
@@ -93,8 +90,8 @@
 
                     <section class="menu-content delay-2">
                         <header class="menu-content__header">
-                            <h4 class="menu-content__title">Homard et espuma de potiron</h4>
-                                <p class="menu-content__para">Mariné aux zeste d'orange</p>
+                            <h4 class="menu-content__title">Soupe à l'oignon</h4>
+                                <p class="menu-content__para">Revisitée</p>
                         </header>
                         <div class="menu-content__price">20€</div>
                         <div class="menu-content__confirm">
@@ -103,20 +100,8 @@
                             </div>
                         </div>
                     </section>
+                </div>
 
-                    <section class="menu-content delay-3">
-                        <header class="menu-content__header">
-                            <h4 class="menu-content__title">Foie gras de canard cuit entier</h4>
-                            <p class="menu-content__para">Confiture de figue et pain toasté</p>
-                        </header>
-                        <div class="menu-content__price">35€</div>
-                        <div class="menu-content__confirm">
-                            <div class="menu-content__check-icon">
-                                <i class="menu-content__icon fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                    </section>
 <!-------------------------------------------
     PLAT - MENU
 --------------------------------------------->
@@ -124,10 +109,10 @@
                     <section class="menus">
                         <h3 class="menus__title">Plats</h3>
 
-                        <section class="menu-content delay-4">
+                        <section class="menu-content delay-3">
                             <header class="menu-content__header">
-                                <h4 class="menu-content__title">Noix de coquilles Saint-Jacques</h4>
-                                <p class="menu-content__para">Sur son lit de purée de céleri-rave</p>
+                                <h4 class="menu-content__title">Coquilles Saint-Jacques</h4>
+                                <p class="menu-content__para">Accompagnées d'une purée de panais</p>
                             </header>
 
                             <div class="menu-content__price">40€</div>
@@ -138,10 +123,10 @@
                             </div>
                         </section> 
 
-                        <section class="menu-content delay-5">
+                        <section class="menu-content delay-4">
                             <header class="menu-content__header">
-                                <h4 class="menu-content__title">Langoustine poêlée</h4>
-                                    <p class="menu-content__para">Purée de patate douce</p>
+                                <h4 class="menu-content__title">Magret de canard</h4>
+                                    <p class="menu-content__para">Et parmentier de pommes de terre</p>
                             </header>
 
                             <div class="menu-content__price">35€</div>
@@ -152,10 +137,10 @@
                             </div>
                         </section> 
 
-                        <section class="menu-content delay-6">
+                        <section class="menu-content delay-5">
                             <header class="menu-content__header">
-                                <h4 class="menu-content__title">Mijoté de queue de boeuf</h4>
-                                    <p class="menu-content__para">Et riz sauvage auw zestes de citron</p>
+                                <h4 class="menu-content__title">Pigeonneau d’Ille-et-Vilaine</h4>
+                                    <p class="menu-content__para">Sur son lit de gnocchis aux légumes</p>
                             </header>
 
                             <div class="menu-content__price">44€</div>
@@ -174,10 +159,10 @@
                     <section class="menus">
                         <h3 class="menus__title">Desserts</h3>
 
-                        <section class="menu-content delay-7">
+                        <section class="menu-content delay-6">
                             <header class="menu-content__header">
-                                <h4 class="menu-content__title">Macaron noisette et chocolat</h4>
-                                    <p class="menu-content__para">Glace au caramel brun et sel de Guérande</p>
+                                <h4 class="menu-content__title">Pétales de violettes glacés</h4>
+                                    <p class="menu-content__para">Et purée de noisettes</p>
                             </header>
 
                             <div class="menu-content__price">18€</div>
@@ -187,10 +172,10 @@
                                 </div>
                         </section> 
 
-                        <section class="menu-content delay-8">
+                        <section class="menu-content delay-7">
                             <header class="menu-content__header">
-                                <h4 class="menu-content__title">Baba au rhum revisté</h4>
-                                    <p class="menu-content__para">Avec son coulis de citron</p>
+                                <h4 class="menu-content__title">Fondant au chocolat</h4>
+                                    <p class="menu-content__para">Revisité</p>
                             </header>
 
                             <div class="menu-content__price">22€</div>
@@ -201,10 +186,10 @@
                             </div>
                         </section> 
 
-                        <section class="menu-content delay-9">
+                        <section class="menu-content delay-8">
                             <header class="menu-content__header">
-                                <h4 class="menu-content__title">Tarte au citron meringuée</h4>
-                                <p class="menu-content__para">Déstructurée</p>
+                                <h4 class="menu-content__title">Millefeuille croustillant</h4>
+                                <p class="menu-content__para">Myrtilles et pâte d’amande</p>
                             </header>
 
                             <div class="menu-content__price">23€</div>
@@ -256,4 +241,5 @@
         </footer>
     </body>
 </html>
+
         
