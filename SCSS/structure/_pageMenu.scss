@@ -103,6 +103,16 @@ MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
 /****************************************
 MISE-EN-PAGE CARTE PAGE-MENU + ROTATE ICON  "MENU"
 ****************************************/
+
+.menu-content {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  
 .menu-content {
   background-color: #fff;
   border-radius: 15px;
@@ -112,10 +122,10 @@ MISE-EN-PAGE CARTE PAGE-MENU + ROTATE ICON  "MENU"
   overflow: hidden;
   padding: 10px;
   cursor: pointer;
-  animation: apparition 0.5s;
+  animation: fadeInUp 1.0s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
-  transform: scale(0);
+  transform: scale(1);
   max-width: 100%;
 
   &__header {
@@ -186,7 +196,7 @@ MISE-EN-PAGE CARTE PAGE-MENU + ROTATE ICON  "MENU"
 
 @for $i from 0 to 9 {
   .delay-#{$i} {
-    animation-delay:  #{$i/10}s;
+    animation-delay:  #{$i/4}s;
   }
 }
 
@@ -206,10 +216,10 @@ ANIMATION BTN-COMMANDER   PAGE-MENU
 
     p {
       background: rgb(255,121,218);
-background: -moz-linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
-background: -webkit-linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
-background: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da",endColorstr="#9256dc",GradientType=1);
+      background: -moz-linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
+      background: -webkit-linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
+      background: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da",endColorstr="#9256dc",GradientType=1);
       border-radius: 30px;
       box-shadow: -1px 3px 25px -10px rgba(0,0,0,0.65);
       color: $WhiteMenu;

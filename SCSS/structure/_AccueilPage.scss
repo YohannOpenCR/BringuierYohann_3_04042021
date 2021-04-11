@@ -72,6 +72,10 @@
     margin: 16px 0px 16px 12px;
     position: relative;
 
+    &:hover{
+      background: $Pinkgirly;
+    }
+
     @media (min-width:1024px){
       flex: 1;
       margin: 0px;
@@ -108,7 +112,11 @@
 
   &__icon{
     margin-right: 16px;
-    color: $Grey;
+    color: $Black;
+
+    &:hover{
+      color: $Primary;
+    }
   }
 }
 

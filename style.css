@@ -225,58 +225,90 @@ ANIMATION LOADING
    DELAY LIST-MENU RESTAURANT. 
 ****************************************/
 .delay-0 {
-  -webkit-animation-delay: 0.0s;
-          animation-delay: 0.0s;
-}
-
-.delay-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.delay-2 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.delay-3 {
+.delay-1 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.delay-4 {
+.delay-2 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.delay-5 {
+.delay-3 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.delay-6 {
+.delay-4 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.delay-7 {
+.delay-5 {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
-.delay-8 {
+.delay-6 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-.delay-9 {
+.delay-7 {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
 
+.delay-8 {
+  -webkit-animation-delay: 0.10s;
+          animation-delay: 0.10s;
+}
+
+.delay-9 {
+  -webkit-animation-delay: 0.11s;
+          animation-delay: 0.11s;
+}
+
 .delay-10 {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  75% {
+    opacity: 0.7;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 /****************************************
@@ -577,6 +609,10 @@ body, html {
   position: relative;
 }
 
+.scrolling__step:hover {
+  background: #d579d541;
+}
+
 @media (min-width: 1024px) {
   .scrolling__step {
     -webkit-box-flex: 1;
@@ -621,7 +657,11 @@ body, html {
 
 .scrolling__icon {
   margin-right: 16px;
-  color: #81818121;
+  color: #363636;
+}
+
+.scrolling__icon:hover {
+  color: #9256DC;
 }
 
 /****************************************
@@ -847,6 +887,15 @@ MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
 MISE-EN-PAGE CARTE PAGE-MENU + ROTATE ICON  "MENU"
 ****************************************/
 .menu-content {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.menu-content {
   background-color: #fff;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 5px #3636363a;
@@ -858,14 +907,14 @@ MISE-EN-PAGE CARTE PAGE-MENU + ROTATE ICON  "MENU"
   overflow: hidden;
   padding: 10px;
   cursor: pointer;
-  -webkit-animation: apparition 0.5s;
-          animation: apparition 0.5s;
+  -webkit-animation: fadeInUp 1.0s;
+          animation: fadeInUp 1.0s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   max-width: 100%;
 }
 
@@ -964,43 +1013,43 @@ MISE-EN-PAGE CARTE PAGE-MENU + ROTATE ICON  "MENU"
 }
 
 .delay-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 .delay-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.delay-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.delay-4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.delay-5 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
+.delay-3 {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
 .delay-6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .delay-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
 }
 
 .delay-8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 /****************************************
