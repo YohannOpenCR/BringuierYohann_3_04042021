@@ -511,7 +511,7 @@ body, html {
 .choice__btn {
   border: 0px;
   padding: 12px 12px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 100px;
   color: white;
@@ -520,8 +520,8 @@ body, html {
   cursor: pointer;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
-  -webkit-box-shadow: 19x 19px 10px #363636;
-          box-shadow: 19x 19px 10px #363636;
+  -webkit-box-shadow: 19px 19px 10px #363636;
+          box-shadow: 19px 19px 10px #363636;
 }
 
 .choice__btn:hover {
@@ -632,14 +632,14 @@ body, html {
 .blocs {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(1, 1fr);
   background: #f6f6f6;
 }
 
 @media (min-width: 1024px) {
   .blocs {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -778,7 +778,7 @@ MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
 
 @media (min-width: 992px) {
   .restos-menus {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(3, 1fr);
     -webkit-column-gap: 60px;
             column-gap: 60px;
@@ -795,7 +795,7 @@ MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
 
 @media (min-widht: 700px) {
   .section-restos-menus {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(3, 1fr);
     -webkit-column-gap: 60px;
             column-gap: 60px;
@@ -807,7 +807,7 @@ MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
 
 @media (min-width: 1024px) {
   .section-restos-menus {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(3, 1fr);
     -webkit-column-gap: 60px;
             column-gap: 60px;
@@ -1027,7 +1027,7 @@ ANIMATION BTN-COMMANDER   PAGE-MENU
   padding: 15px 40px;
   border: 0px;
   padding: 12px 12px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 100px;
   color: white;
@@ -1036,8 +1036,8 @@ ANIMATION BTN-COMMANDER   PAGE-MENU
   cursor: pointer;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
-  -webkit-box-shadow: 19x 19px 10px #363636;
-          box-shadow: 19x 19px 10px #363636;
+  -webkit-box-shadow: 19px 19px 10px #363636;
+          box-shadow: 19px 19px 10px #363636;
   cursor: pointer;
 }
 
