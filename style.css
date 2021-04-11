@@ -517,18 +517,20 @@ body, html {
   border-radius: 100px;
   color: white;
   background: #FF79DA;
-  background: linear-gradient(170deg, #FF79DA 19%, #9256DC 100%);
+  background: #ff79da;
+  background: linear-gradient(170deg, #ff79da 19%, #9256dc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da",endColorstr="#9256dc",GradientType=1);
   cursor: pointer;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
-  -webkit-box-shadow: 19x 19px 10px #363636;
-          box-shadow: 19x 19px 10px #363636;
+  -webkit-box-shadow: 6px 6px 10px #363636;
+          box-shadow: 6px 6px 10px #363636;
 }
 
 .choice__btn:hover {
   background-color: white;
-  -webkit-box-shadow: 6px 6px 10px #363636;
-          box-shadow: 6px 6px 10px #363636;
+  -webkit-box-shadow: 8px 8px 12px #363636;
+          box-shadow: 8px 8px 12px #363636;
 }
 
 .choice__btn a {
@@ -1035,19 +1037,21 @@ ANIMATION BTN-COMMANDER   PAGE-MENU
   border-radius: 100px;
   color: white;
   background: #FF79DA;
-  background: linear-gradient(170deg, #FF79DA 19%, #9256DC 100%);
+  background: #ff79da;
+  background: linear-gradient(170deg, #ff79da 19%, #9256dc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da",endColorstr="#9256dc",GradientType=1);
   cursor: pointer;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
-  -webkit-box-shadow: 19x 19px 10px #363636;
-          box-shadow: 19x 19px 10px #363636;
+  -webkit-box-shadow: 6px 6px 10px #363636;
+          box-shadow: 6px 6px 10px #363636;
   cursor: pointer;
 }
 
 .commandBtn p:hover {
   background-color: white;
-  -webkit-box-shadow: 6px 6px 10px #363636;
-          box-shadow: 6px 6px 10px #363636;
+  -webkit-box-shadow: 8px 8px 12px #363636;
+          box-shadow: 8px 8px 12px #363636;
 }
 
 .commandBtn p a {

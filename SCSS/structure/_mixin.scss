@@ -12,14 +12,18 @@
   border-radius: 100px;
   color: white;
   background: $Secondary;
-  background: linear-gradient(170deg, $Secondary 19%, $Primary 100%);
+  background: rgb(255,121,218);
+background: -moz-linear-gradient(170deg, rgba(255,121,218,1) 19%, rgba(146,86,220,1) 100%);
+background: -webkit-linear-gradient(170deg, rgba(255,121,218,1) 19%, rgba(146,86,220,1) 100%);
+background: linear-gradient(170deg, rgba(255,121,218,1) 19%, rgba(146,86,220,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da",endColorstr="#9256dc",GradientType=1);
   cursor: pointer;
   transition-duration: 0.25s;
-  box-shadow: 19x 19px 10px $Black;
+  box-shadow: 6px 6px 10px $Black;
 
   &:hover {
     background-color: white;
-    box-shadow: 6px 6px 10px $Black;
+    box-shadow: 8px 8px 12px $Black;
   }
 
   a {
