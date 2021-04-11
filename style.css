@@ -950,13 +950,13 @@ body, html {
   left: -12px;
 }
 
-.scrolling__stepicon {
+.scrolling__icon {
   margin-right: 16px;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.699);
 }
 
-.scrolling__stepicon:hover {
+.scrolling__icon:hover {
   color: #9256DC;
 }
 
