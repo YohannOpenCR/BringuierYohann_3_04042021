@@ -15,7 +15,7 @@
   }
 
   &__text{
-    font-weight: 700;
+    font-weight: 400;
     font-family: $font-general;
   }
 }
@@ -30,6 +30,8 @@
 
   &__title {
     margin: 0px;
+    font-family: $font-general;
+    font-weight: 800;
   }
 
   &__subtitle {
@@ -68,9 +70,14 @@
     box-shadow: 4px 4px 8px $blackeraser;
     border-radius: 20px;
     background-color: $Pale2;
+    font-family: 'Roboto';
     padding: 24px;
     margin: 16px 0px 16px 12px;
     position: relative;
+
+    &__stepicon{
+      color: $Primary;
+    }
 
     &:hover{
       background: $Pinkgirly;
@@ -110,9 +117,10 @@
     }
   }
 
-  &__icon{
+  &__stepicon{
     margin-right: 16px;
-    color: $Black;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.699);
 
     &:hover{
       color: $Primary;
