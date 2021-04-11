@@ -47,6 +47,7 @@ MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
 
   @media (min-width: 992px) {
     grid-template-columns: repeat(3,1fr);
+    -ms-grid-columns: repeat(3, 1fr);
     column-gap: 60px;
     margin: 0px 50px;
   }
@@ -60,6 +61,7 @@ MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
 
   @media (min-widht:700px){
     grid-template-columns: repeat(3,1fr);
+    -ms-grid-columns: repeat(3, 1fr);
     column-gap: 60px;
     margin: 0px 70px;
     padding: 50px;
@@ -68,6 +70,7 @@ MISE-EN-PAGE CARTE PAGE-MENU  "BLOC-GENERAL"
 
   @media (min-width:1024px){
     grid-template-columns: repeat(3,1fr);
+    -ms-grid-columns: repeat(3, 1fr);
     column-gap: 60px;
     margin: 0px 70px;
     margin-top: -50px;
@@ -202,7 +205,11 @@ ANIMATION BTN-COMMANDER   PAGE-MENU
   text-decoration: none;
 
     p {
-      background: linear-gradient(0deg,$Secondary 30%, $Primary 80%);
+      background: rgb(255,121,218);
+background: -moz-linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
+background: -webkit-linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
+background: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(146,86,220,1) 35%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da",endColorstr="#9256dc",GradientType=1);
       border-radius: 30px;
       box-shadow: -1px 3px 25px -10px rgba(0,0,0,0.65);
       color: $WhiteMenu;
