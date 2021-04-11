@@ -1,6 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /****************************************
+  FONT-FAMILLY 
+****************************************/
+/****************************************
+  COLORS
+****************************************/
+/****************************************
+   PADDING + ATTRIBUT
+****************************************/
+/****************************************
     KEYFRAMES LIST-MENU RESTAURANT . 
 ****************************************/
 @-webkit-keyframes apparition {
@@ -82,6 +91,136 @@
 /****************************************
 ANIMATION LOADING
 ****************************************/
+@-webkit-keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    -webkit-transform: scaleX(1.7);
+            transform: scaleX(1.7);
+    opacity: 0;
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    -webkit-transform: scaleX(1.7);
+            transform: scaleX(1.7);
+    opacity: 0;
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+.corps__circle:nth-child(2) {
+  left: 45%;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.corps__circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.corps__shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 62px;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-animation: shadow .5s alternate infinite ease;
+          animation: shadow .5s alternate infinite ease;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    -webkit-transform: scaleX(1.5);
+            transform: scaleX(1.5);
+  }
+  40% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: .7;
+  }
+  100% {
+    -webkit-transform: scaleX(0.2);
+            transform: scaleX(0.2);
+    opacity: .4;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    -webkit-transform: scaleX(1.5);
+            transform: scaleX(1.5);
+  }
+  40% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: .7;
+  }
+  100% {
+    -webkit-transform: scaleX(0.2);
+            transform: scaleX(0.2);
+    opacity: .4;
+  }
+}
+
+.corps__shadow:nth-child(4) {
+  left: 45%;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.corps__shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
 /****************************************
    DELAY LIST-MENU RESTAURANT. 
 ****************************************/
@@ -150,20 +289,72 @@ ANIMATION LOADING
    PADDING + ATTRIBUT
 ****************************************/
 /****************************************
-  FONT-FAMILLY 
-****************************************/
-/****************************************
-  COLORS
-****************************************/
-/****************************************
-   PADDING + ATTRIBUT
-****************************************/
-/****************************************
   MIXIN GENERAL DE BUTTON
 ****************************************/
 /*********************************************************************
       Aide par un générateur de Gradient : https://cssgradient.io/
 **********************************************************************/
+.corps {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  -webkit-animation: loader 0.01s;
+          animation: loader 0.01s;
+  -webkit-animation-delay: 2.0s;
+          animation-delay: 2.0s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.corps__wrapper {
+  width: 500px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.corps__circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #9256DC;
+  left: 15%;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-animation: circle 0.5s alternate infinite  ease;
+          animation: circle 0.5s alternate infinite  ease;
+}
+
+.corps__wrapper span {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  top: 75px;
+  margin-top: 20px;
+  font-family: "Shrikhand";
+  font-size: 80px;
+  letter-spacing: 12px;
+  color: #FF79DA;
+  text-align: center;
+}
+
 /****************************************
   GENERAL BODY + HTML
 ****************************************/
