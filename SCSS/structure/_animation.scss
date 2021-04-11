@@ -13,12 +13,6 @@
     align-items: center;
     justify-content: center;
 
-    @media (min-widht:724px){
-        display: grid;
-        height: 200px;
-        width: 200px;
-    }
-
     &__wrapper{
     width:500px;
     height:60px;
@@ -45,9 +39,20 @@
         top:75px;
         margin-top: 20px;
         font-family: $font-title;
-        font-size: 80px;
-        letter-spacing: 12px;
+        font-size: 60px;
         color: $Secondary, ;
         text-align: center;
+        }
+
+    @media (max-width:300px){
+        position: fixed;
+        position: relative;
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        background:#FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

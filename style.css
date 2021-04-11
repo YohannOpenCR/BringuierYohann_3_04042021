@@ -319,15 +319,6 @@ ANIMATION LOADING
           justify-content: center;
 }
 
-@media (min-widht: 724px) {
-  .corps {
-    display: -ms-grid;
-    display: grid;
-    height: 200px;
-    width: 200px;
-  }
-}
-
 .corps__wrapper {
   width: 500px;
   height: 60px;
@@ -358,10 +349,31 @@ ANIMATION LOADING
   top: 75px;
   margin-top: 20px;
   font-family: "Shrikhand";
-  font-size: 80px;
-  letter-spacing: 12px;
+  font-size: 60px;
   color: #FF79DA;
   text-align: center;
+}
+
+@media (max-width: 300px) {
+  .corps {
+    position: fixed;
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /****************************************
