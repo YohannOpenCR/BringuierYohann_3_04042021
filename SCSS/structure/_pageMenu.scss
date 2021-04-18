@@ -12,6 +12,20 @@ HEADER PAGE-MENU
     margin: 0;
     text-align: center;
   }
+
+  &__return {
+    position: absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transform: translateY(-35%);
+    font-size: 19px;
+    color: black;
+    left: 32px;
+    height: 32px;
+    width: 32px;
+    top: 50%;
+  }
 }
 
 .menu-header{

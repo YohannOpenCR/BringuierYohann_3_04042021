@@ -58,7 +58,8 @@
     margin: 0px;
     padding: 0px;
     list-style: none;
-    counter-reset: ChangeListe;
+    counter-reset: ChangeList;
+    
 
     @media (min-width: 1024px){
       display: flex;
